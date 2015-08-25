@@ -1,6 +1,6 @@
 Introduction
 ------------
-nodejs-dataworks is a module library for IBM DataWorks APIs. At this time, only the data load APIs are covered by this library, but more DataWorks APIs will be covered over time including "Address Cleansing" and "Data Profiling" apis.
+nodejs-dataworks is a module library for IBM DataWorks APIs. At this time, only the data load APIs are covered by this library, but more DataWorks APIs will be covered over time including "Address Cleansing" and "Data Profiling" apis.  
 As a reference, [The Simple Data Pipe example app](https://developer.ibm.com/clouddataservices/simple-data-pipe/) is using nodejs-dataworks to programmatically create activities for moving data from Cloudant to DashDB. (See the documentation [here](https://www.ng.bluemix.net/docs/api/content/api/dataworks/data-load/index.html).)
 
 This post provides documentation on how to use our DataWorks client library for Node.js.
