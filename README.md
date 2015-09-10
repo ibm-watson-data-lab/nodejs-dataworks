@@ -8,7 +8,7 @@ This post provides documentation on how to use our DataWorks client library for 
 How to use the library
 ----------------------
 ```javascript
-var dataworks = require("dataworks").dataload;
+var dataworks = require("nodejs-dataworks").dataload;
 var dwInstance = new dataworks();
 ...
 ```  
