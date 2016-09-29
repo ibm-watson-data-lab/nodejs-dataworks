@@ -1,7 +1,7 @@
 {
   "name": "nodejs-dataworks",
   "version": "0.1.2",
-  "description": "nodejs library for DataWorks apis",
+  "description": "nodejs library for Bluemix Data Connect apis",
   "main": "./lib/index",
   "author": "david_taieb@us.ibm.com",
   "scripts": {
