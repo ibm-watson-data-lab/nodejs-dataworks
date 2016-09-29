@@ -1,9 +1,9 @@
 Introduction
 ------------
-nodejs-dataworks is a module library for IBM DataWorks APIs. At this time, only the data load APIs are covered by this library, but more DataWorks APIs will be covered over time including "Address Cleansing" and "Data Profiling" apis.  
+nodejs-dataworks is a module library for IBM Bluemix Data Connect APIs. At this time, only the data load APIs are covered by this library, but more Data Conect APIs will be covered over time including "Address Cleansing" and "Data Profiling" apis.  
 As a reference, [The Simple Data Pipe example app](https://developer.ibm.com/clouddataservices/simple-data-pipe/) is using nodejs-dataworks to programmatically create activities for moving data from Cloudant to DashDB. (See the documentation [here](https://www.ng.bluemix.net/docs/api/content/api/dataworks/data-load/index.html).)
 
-This post provides documentation on how to use our DataWorks client library for Node.js.
+This post provides documentation on how to use our Data Connect client library for Node.js.
 
 How to use the library
 ----------------------
@@ -15,13 +15,13 @@ var dwInstance = new dataworks();
 
 Let's take a deeper look at what's happening behind the `var dwInstance = new dataworks();` code.
 
-By default the library will automatically try to find a service bound to the application using a regular expression that contains the word "dataworks" in its name. If you know the service you want to bind to, you can always pass it as an option object like so:
+By default the library will automatically try to find a service bound to the application using a regular expression that contains the word "dataworks" in its name. If you know the Bluemix Data Connect service you want to bind to, you can always pass it as an option object like so:
 
 ```javascript  
-var dwInstance = new dataworks({dwServiceName: "myDataWorksServiceName"});
+var dwInstance = new dataworks({dwServiceName: "myDataConnectServiceName"});
 ```
 
-Once the DataWorks service is found in Bluemix's VCAP_SERVICES environment variable, the library will extract the credential information (url, userid, password) and use it in all subsequent API calls.
+Once the Data Connect service is found in Bluemix's VCAP_SERVICES environment variable, the library will extract the credential information (url, userid, password) and use it in all subsequent API calls.
   
 _Note:_
 
