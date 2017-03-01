@@ -5,11 +5,11 @@
   "main": "./lib/index",
   "author": "david_taieb@us.ibm.com",
   "scripts": {
-  	"test": "NODE_CONFIG=tests/config/configYP ./node_modules/.bin/mocha ./tests"
+    "test": "NODE_CONFIG=tests/config/configYP ./node_modules/.bin/mocha ./tests"
   },
   "repository": {
-   "type" : "git",
-   "url": "git+https://github.com/ibm-cds-labs/nodejs-dataworks.git"
+    "type": "git",
+    "url": "git+https://github.com/ibm-cds-labs/nodejs-dataworks.git"
   },
   "keywords": [
     "dataworks",
@@ -17,9 +17,9 @@
     "data movement"
   ],
   "dependencies": {
-  	"bluemix-helper-config": "*",
-  	"request": "~2.58.0",
-  	"http-proxy": "~1.11.1",
+    "bluemix-helper-config": "*",
+    "request": "~2.68.0",
+    "http-proxy": "~1.11.1",
     "lodash": "~3.9.3"
   },
   "devDependencies": {
